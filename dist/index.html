@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jquery contact form</title>
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+</head>
+<body>
+	<div id="contact_form_holder"> 
+		<form id="contact_form">
+		<h2>Contact Us</h2>
+
+		<p>
+		Name 
+			<label for="name">
+			<div><input type="text" id="name" class="textbox" placeholder="Sally Smith"></div>
+			<div id="name_error" class="error"></div>
+			</label>
+		</p>
+
+		<p>
+		Email 
+			<label for="email">
+			<div><input type="email" id="email" class="textbox" placeholder="you@example.com"></div>
+			<div id="email_error" class="error"></div>
+			</label>
+		</p>
+
+		<p>
+		Website 
+			<label for="website">
+			<div><input type="text" id="website" class="textbox" placeholder="http://example.com"></div>
+			<div id="website_error" class="error"></div>
+			</label>
+		</p>
+
+		<p>
+		Message 
+			<label for="message">
+			<div><textarea id="message" class="textbox" placeholder="Your message"></textarea></div>
+			<div id="message_error" class="error"></div>
+			</label>
+		</p>
+
+		<p id="submit_p">
+		<input type="submit" id="submit_button">
+		</p>
+
+		</form>
+	</div>
+	<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script type="text/javascript" src="bower_components/validator/validator.js"></script>
+    <script type="text/javascript" src="scripts/main.js"></script>
+</body>
+</html>
