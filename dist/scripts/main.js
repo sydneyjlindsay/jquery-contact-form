@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	$('#submit_button').click(function (e) {
+	$('#submit-button').click(function (e) {
 		e.preventDefault(); 
 
 		var error = false; 
@@ -10,52 +10,52 @@ $(document).ready(function() {
 
 		if(name.length == 0) {
 			error = true;
-			$('#name_error').fadeIn(500);
+			$('#name-error').show();
 		}
 		else {
-			$('#name_error').fadeOut(500);
+			$('#name-error').hide();
 		}
 
 
 		if (email.length == 0) {
 			error = true;
-			$('#email_error').fadeIn(500);
+			$('#email-error').show();
 		}
 		else {
-			$('#email_error').fadeOut(500);
+			$('#email-error').hide();
 		}
 
-		if (email.indexOf('@') == '-1') {
+		if (email.indexOf('@') < 0) {
 			error = true; 
-			$('#email_error2').fadeIn(500);
+			$('#email-error2').show();
 		}
 		else {
-			$('#email_error2').fadeOut(500);
+			$('#email-error2').hide();
 		}
 
 
 		if (website.length == 0) {
 			error = true;
-			$('#website_error').fadeIn(500);
+			$('#website-error').show();
 		}
 		else {
-			$('#website_error').fadeOut(500);
+			$('#website-error').hide();
 		}
-		if (website.indexOf('http://') == '-1') {
+		if (website.indexOf('http://') < 0) {
 			error = true; 
-			$('#website_error2').fadeIn(500);
+			$('#website-error2').show();
 		}
 		else {
-			$('#website_error2').fadeOut(500);
+			$('#website-error2').hide();
 		}
 
 
 		if(message.length == 0) {
 			error = true;
-			$('#message_error').fadeIn(500);
+			$('#message-error').show();
 		}
 		else {
-			$('#message_error').fadeOut(500);
+			$('#message-error').hide();
 		}
 
 		// if (error == false) {
